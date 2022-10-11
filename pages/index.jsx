@@ -21,7 +21,7 @@ function Todo() {
     <Box style={{ width: '100vw', height: '100vh' }}>
       <Grid container item direction={'column'} xs={12} alignContent={'center'} justifyContent={'center'} alignItems={'center'} height={'100%'} gap={2}>
         <h1>To Do List</h1>
-        <TextField id="input" label="Outlined" variant="outlined" value={currentValue} onChange={(e) => { setCurrentValue(e.target.value) }} style={{ width: '75%', maxWidth: '450px', whiteSpace: 'nowrap' }} />
+        <TextField id="input" label="Note" variant="outlined" value={currentValue} onChange={(e) => { setCurrentValue(e.target.value) }} style={{ width: '75%', maxWidth: '450px', whiteSpace: 'nowrap' }} />
         <Button variant="contained" onMouseDown={onSubmit} style={{ width: '75%', maxWidth: '450px' }}>Save Note</Button>
 
         {
