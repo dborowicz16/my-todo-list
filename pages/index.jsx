@@ -33,8 +33,8 @@ function Todo() {
                     <div style={{ width: '100%', display: 'flex', overflowX: 'auto', paddingLeft: '10px', paddingRight: '10px' }}>{item}</div>
 
                     <div style={{ display: 'flex', width: '75px' }}>
-                      <EditIcon style={{ color: '#1976d2' }} onMouseDown={() => first[first.indexOf(item)] = currentValue} onMouseUp={() => setCurrentValue('')} />
-                      <DeleteIcon style={{ color: '#1976d2' }} onMouseDown={() => first.splice(first.indexOf(item), 1)} onMouseUp={() => setRender(render + 1)} />
+                      <EditIcon className="editDeleteIcon" onMouseDown={() => first[first.indexOf(item)] = currentValue} onMouseUp={() => setCurrentValue('')} />
+                      <DeleteIcon className="editDeleteIcon" onMouseDown={() => first.splice(first.indexOf(item), 1)} onMouseUp={() => setRender(render + 1)} />
                     </div>
 
                   </Grid>

@@ -26,4 +26,8 @@ a {
   }
 }
 
+.editDeleteIcon {
+  cursor: pointer;
+  color: #1976d2;
+}
 
